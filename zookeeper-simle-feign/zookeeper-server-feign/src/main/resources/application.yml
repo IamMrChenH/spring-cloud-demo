@@ -1,0 +1,11 @@
+server:
+  port: 8081
+spring:
+  application:
+    name: zookeeper-server-feign
+  cloud:
+    zookeeper:
+      connect-string: 192.168.65.129:2181
+      discovery:
+        instance-host: ${spring.cloud.client.ip-address}
+        instance-port: ${server.port}
