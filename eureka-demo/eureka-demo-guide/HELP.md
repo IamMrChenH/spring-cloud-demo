@@ -33,3 +33,16 @@ spring-cloud-dependencies:Dalston.SR4
 
 * PORT 8082
 * @EnableEurekaClient 提供远程服务
+
+#### eureka-client-ribbon(消费者-服务转换地址-负载均衡)
+
+* PORT 8083
+* @EnableEurekaClient 提供远程服务
+
+新增依赖:
+```xml
+ <dependency>
+     <groupId>org.springframework.cloud</groupId>
+     <artifactId>spring-cloud-starter-ribbon</artifactId>
+ </dependency>
+```
