@@ -21,6 +21,7 @@
         <module>eureka-client-consumer</module>
         <module>eureka-client-ribbon</module>
         <module>eureka-client-feign</module>
+        <module>eureka-client-feign-file</module>
     </modules>
 
     <dependencies>

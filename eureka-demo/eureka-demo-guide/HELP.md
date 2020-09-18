@@ -57,3 +57,26 @@ spring-cloud-dependencies:Dalston.SR4
      <artifactId>spring-cloud-starter-feign</artifactId>
  </dependency>
 ```
+
+#### eureka-client-feign-file(消费者-feign上传文件-负载均衡)
+* PORT 8085
+* @EnableEurekaClient 提供远程服务
+* @EnableFeignClients 开启FeignClient 接口远程访问功能
+新增依赖: 上传文件用
+```xml
+<dependency>
+    <groupId>io.github.openfeign.form</groupId>
+    <artifactId>feign-form</artifactId>
+    <version>3.0.3</version>
+</dependency>
+<dependency>
+    <groupId>io.github.openfeign.form</groupId>
+    <artifactId>feign-form-spring</artifactId>
+    <version>3.0.3</version>
+</dependency>
+<dependency>
+    <groupId>commons-fileupload</groupId>
+    <artifactId>commons-fileupload</artifactId>
+    <version>1.3.3</version>
+</dependency>
+```
