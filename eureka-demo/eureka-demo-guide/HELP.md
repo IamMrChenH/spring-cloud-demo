@@ -46,3 +46,14 @@ spring-cloud-dependencies:Dalston.SR4
      <artifactId>spring-cloud-starter-ribbon</artifactId>
  </dependency>
 ```
+#### eureka-client-feign(消费者-“接口”转“远程访问”-负载均衡)
+* PORT 8084
+* @EnableEurekaClient 提供远程服务
+* @EnableFeignClients 开启FeignClient 接口远程访问功能
+新增依赖:
+```xml
+ <dependency>
+     <groupId>org.springframework.cloud</groupId>
+     <artifactId>spring-cloud-starter-feign</artifactId>
+ </dependency>
+```
