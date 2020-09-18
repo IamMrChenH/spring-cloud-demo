@@ -1,0 +1,14 @@
+# 应用名称
+server:
+  port: 8100
+
+spring:
+  application:
+    name: spring-cloud-config-demo
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/IamMrChenH/spring-cloud-config-demo/
+          search-paths: /
+          default-label: master
