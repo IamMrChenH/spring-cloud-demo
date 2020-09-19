@@ -1,0 +1,17 @@
+# 应用名称
+server:
+  port: 8100
+
+spring:
+  application:
+    name: spring-cloud-config-demo
+  profiles:
+    active: native
+  cloud:
+    config:
+      server:
+        native:
+          search-locations: classpath:config/{application}/
+          add-label-locations: false
+        git:
+          search-paths: {application}
