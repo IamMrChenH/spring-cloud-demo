@@ -16,7 +16,7 @@ import org.springframework.web.client.RestTemplate;
 @EnableSwagger2Doc
 @EnableEurekaClient
 @SpringBootApplication
-public class EurekaClientRibbonApplication {
+public class EurekaClientRibbonHystrixApplication {
 
     @Bean
     @LoadBalanced
@@ -26,7 +26,7 @@ public class EurekaClientRibbonApplication {
 
 
     public static void main(String[] args) {
-        new SpringApplicationBuilder(EurekaClientRibbonApplication.class)
+        new SpringApplicationBuilder(EurekaClientRibbonHystrixApplication.class)
                 .web(true)
                 .run(args);
     }
